@@ -1,7 +1,7 @@
 # 🧮 Django Calculator Web App
 
 <div align="center">
-  <img src="screenshot.png" alt="Calculator Screenshot" width="400">
+  <img src="calculator_app/static/img/m_d calc.jpg" alt="Calculator Screenshot" width="400">
   <p><em>Modern web calculator powered by Django</em></p>
 </div>
 
@@ -201,7 +201,7 @@ Create `.eslintrc.json`:
 
 ## 📜 License
 
-MIT © [Your Name] — See [LICENSE](LICENSE) for details.
+MIT © [Hillary Okoth] — See [LICENSE](LICENSE) for details.
 
 ---
 
