@@ -1,0 +1,32 @@
+{
+  "name": "django-calculator",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bunny-Developers/django-calculator.git"
+  },
+  "keywords": ["django", "calculator", "web application"],
+  "author": "Hillary Okoth",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bunny-Developers/django-calculator/issues"
+  },
+  "homepage": "https://github.com/Bunny-Developers/django-calculator#readme",
+  "description": "A simple calculator web application built with Django",
+  "dependencies": {
+    "django": "^4.0",
+    "djangorestframework": "^3.12.4"
+  },
+  "devDependencies": {
+    "django-debug-toolbar": "^3.2.1",
+    "django-extensions": "^3.1.3"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  }
+}

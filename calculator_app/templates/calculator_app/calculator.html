@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Calculator</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'calculator_app/css/styles.css' %}">
+</head>
+<body>
+    <div class="calculator-container">
+        <h1>Modern Django Calculator</h1>
+        <div class="calculator">
+            <div class="display">
+                <input type="text" id="expression" readonly>
+                <div id="result">0</div>
+            </div>
+            <div class="buttons">
+                <button class="btn operator" value="C">C</button>
+                <button class="btn operator" value="(">(</button>
+                <button class="btn operator" value=")">)</button>
+                <button class="btn operator" value="/">/</button>
+                
+                <button class="btn" value="7">7</button>
+                <button class="btn" value="8">8</button>
+                <button class="btn" value="9">9</button>
+                <button class="btn operator" value="*">×</button>
+                
+                <button class="btn" value="4">4</button>
+                <button class="btn" value="5">5</button>
+                <button class="btn" value="6">6</button>
+                <button class="btn operator" value="-">-</button>
+                
+                <button class="btn" value="1">1</button>
+                <button class="btn" value="2">2</button>
+                <button class="btn" value="3">3</button>
+                <button class="btn operator" value="+">+</button>
+                
+                <button class="btn" value="0">0</button>
+                <button class="btn" value=".">.</button>
+                <button class="btn" value="DEL">DEL</button>
+                <button class="btn operator equal" value="=">=</button>
+            </div>
+        </div>
+    </div>
+
+    {% csrf_token %}
+    <script src="{% static 'calculator_app/js/calculator.js' %}"></script>
+</body>
+</html>
+{% comment %}
+    This template renders a modern calculator interface using HTML, CSS, and JavaScript.
+    It includes buttons for digits, operators, and functionalities like clear and delete.
+    The calculator's logic is handled in the linked JavaScript file.
+{% endcomment %}
+
+{% comment %}
+    The static files are loaded using Django's static template tag.
+    Ensure that the static files are correctly configured in your Django settings.
+{% endcomment %}
+{% comment %}
+    The calculator's design is responsive and user-friendly, suitable for both desktop and mobile devices.
+    The CSS styles are defined in the linked stylesheet to enhance the visual appearance of the calculator.
+{% endcomment %}
